@@ -1,48 +1,90 @@
 body {
-    background: #f7f7f9;
-    font-family: 'Pretendard', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: #f8f9fb;
+    font-family: 'Pretendard', 'Segoe UI', Arial, sans-serif;
+    color: #222;
 }
-.container {
-    max-width: 1400px;        /* 전체 폭을 키움 */
-    margin: 60px auto;       /* 위아래 여백도 넉넉하게 */
-    background: #fff;
-    border-radius: 22px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
-    padding: 50px 44px 54px 44px;  /* 패딩도 여유롭게 */
-}
-header {
+
+.main-wrapper {
     display: flex;
+    max-width: 980px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 18px rgba(40,50,80,0.09);
+    min-height: 560px;
+}
+
+.sidebar {
+    width: 260px;
+    background: #f3f4f7;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 35px;
+    padding: 42px 25px 30px 25px;
+    box-sizing: border-box;
+    border-right: 1.5px solid #ececf2;
 }
-.profile-pic {
-    width: 160px;           /* 사진 폭 크게 */
-    height: 160px;
-    object-fit: cover;
+
+.profile-img {
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    margin-right: 32px;
-    border: 3px solid #eee;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 2.5px solid #e3e4e7;
 }
-h1 {
-    font-size: 2.9em;       /* 이름 크기도 키움 */
-    margin: 0;
+
+.sidebar h1 {
+    font-size: 1.8em;
+    margin: 0 0 8px 0;
     color: #2d3a4b;
 }
-h2 {
-    font-size: 1.4em;
-    margin: 30px 0 12px 0;
-    color: #36587c;
+
+.email {
+    font-size: 1em;
+    color: #436793;
+    margin-bottom: 15px;
+    word-break: break-all;
 }
-.intro p, .specs li {
-    font-size: 1.18em;      /* 본문 폰트 크게 */
-    color: #444;
+
+.links {
+    list-style: none;
+    padding: 0;
+    margin-top: 14px;
 }
-.specs ul {
-    margin: 0;
-    padding-left: 20px;
+.links li {
+    margin: 8px 0;
 }
-.specs li {
+.links a {
+    color: #2753aa;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.links a:hover {
+    color: #8c66f2;
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    padding: 45px 48px 32px 48px;
+}
+
+.content h2 {
+    font-size: 1.28em;
+    color: #2352a4;
+    margin-top: 32px;
     margin-bottom: 10px;
+}
+.content p,
+.content ul {
+    font-size: 1.09em;
+    margin: 0 0 20px 0;
+}
+.content ul {
+    padding-left: 18px;
 }
