@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 .container {
-    max-width: 800px;        /* 전체 폭을 키움 */
+    max-width: 1400px;        /* 전체 폭을 키움 */
     margin: 60px auto;       /* 위아래 여백도 넉넉하게 */
     background: #fff;
     border-radius: 22px;
