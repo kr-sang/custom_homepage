@@ -1,0 +1,48 @@
+body {
+    background: #f7f7f9;
+    font-family: 'Pretendard', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;        /* 전체 폭을 키움 */
+    margin: 60px auto;       /* 위아래 여백도 넉넉하게 */
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+    padding: 50px 44px 54px 44px;  /* 패딩도 여유롭게 */
+}
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.profile-pic {
+    width: 160px;           /* 사진 폭 크게 */
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 32px;
+    border: 3px solid #eee;
+}
+h1 {
+    font-size: 2.9em;       /* 이름 크기도 키움 */
+    margin: 0;
+    color: #2d3a4b;
+}
+h2 {
+    font-size: 1.4em;
+    margin: 30px 0 12px 0;
+    color: #36587c;
+}
+.intro p, .specs li {
+    font-size: 1.18em;      /* 본문 폰트 크게 */
+    color: #444;
+}
+.specs ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.specs li {
+    margin-bottom: 10px;
+}
